@@ -36,7 +36,15 @@
     </table>
 
 <p>Joueur Humain commencez !</p>
-
+    <div class="row">
+        <div class="col-lg-6">
+            <div class="col-lg-4">
+              <div class="jeu">
+                
+              </div>
+            </div>
+        </div>
+    </div>
 
 
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->

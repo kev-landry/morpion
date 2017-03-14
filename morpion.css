@@ -2,8 +2,13 @@ table, tr, td, th{
   border: 1px solid black;
 }
 .table{
-  width: 50%;
+  width: 25%;
 }
 td button{
   margin-left: 50%;
+}
+.jeu{
+  width: 300px;
+  height: 300px;
+  border: 1px solid black;
 }
