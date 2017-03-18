@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
 
     <link rel="stylesheet" type="text/css" href="morpion.css">
-    <script type="text/javascript" src="morpion.js"></script>
+
 
   </head>
   <body>
@@ -24,7 +24,7 @@
       <div class="col-lg-12">
         <div class="center-block jeu">
           <div class="ligne">
-            <div class = "carre">
+            <div class = "carre" id="test">
               <button onclick="croix()">test</button>
             </div>
             <div class = "carre">
@@ -71,5 +71,7 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+
+    <script type="text/javascript" src="morpion.js"></script>
   </body>
 </html>

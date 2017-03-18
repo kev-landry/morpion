@@ -1,23 +1,22 @@
-h1{
-  text-align: center;
+h1 {
+    text-align: center;
 }
-.table{
-  width: 25%;
+.jeu {
+    width: 500px;
+    /*border: 1px solid black;*/
+    /*margin-left: 33.3%;*/
 }
 
-.jeu{
-  width: 500px;
-  /*border: 1px solid black;*/
-  /*margin-left: 33.3%;*/
+.ligne {
+    /*border: 1px solid red;*/
+    display: flex;
+    flex-direction: row;
 }
-.ligne{
-  /*border: 1px solid red;*/
-  display: flex;
-  flex-direction: row;
-}
-.carre{
-  border: 1px solid black;
-  width: 33.3%;
-  height: 150px;
-  margin: 5px;
+
+.carre {
+    border: 1px solid black;
+    width: 33.3%;
+    height: 150px;
+    margin: 5px;
+    background-color: pink;
 }
