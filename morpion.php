@@ -15,50 +15,39 @@
 
   </head>
   <body>
-    <script>
-      //alert('hello world');
-    </script>
+
     <h1>Morpion</h1>
 
-    <div class="row">
+    <div class="row-fluid">
       <div class="col-lg-12">
-        <div class="center-block jeu">
+          <p class="debut"></p>
+        <div class="center-block grille">
           <div class="ligne">
-            <div class = "carre" id="test">
-              <button onclick="croix()">test</button>
+            <div class = "carre">
             </div>
             <div class = "carre">
-              <button></button>
             </div>
             <div class = "carre">
-              <button></button>
             </div>
           </div>
           <div class="ligne">
             <div class = "carre">
-              <button></button>
             </div>
             <div class = "carre">
-              <button></button>
             </div>
             <div class = "carre">
-              <button></button>
             </div>
           </div>
           <div class="ligne">
             <div class = "carre">
-              <button></button>
             </div>
             <div class = "carre">
-              <button></button>
-              <p>x</p>
             </div>
             <div class = "carre">
-              <button></button>
             </div>
           </div>
         </div>
-                  <p>Joueur Humain commencez !</p>
+
       </div>
     </div>
 
