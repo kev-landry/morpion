@@ -16,39 +16,46 @@
 
     <h1>Morpion</h1>
 
-
-    <table class="table">
-      <tr>
-        <td><button onclick="check()"></button></td>
-        <td><button onclick="check()"></button></td>
-        <td><button onclick="check()"></button></td>
-      </tr>
-      <tr>
-        <td><button onclick="check()"></button></td>
-        <td><button onclick="check()"></button></td>
-        <td><button onclick="check()"></button></td>
-      </tr>
-      <tr>
-        <td><button onclick="check()"></button></td>
-        <td><button onclick="check()"></button></td>
-        <td><button onclick="check()"></button></td>
-      </tr>
-    </table>
-
-<p>Joueur Humain commencez !</p>
     <div class="row">
-        <div class="col-lg-6">
-            <div class="col-lg-4">
-              <div class="jeu">
-                
-              </div>
+      <div class="col-lg-12">
+        <div class="center-block jeu">
+          <div class="ligne">
+            <div onclick="croix" class = "carre">
             </div>
+            <div onclick="croix" class = "carre">
+            </div>
+            <div onclick="croix" class = "carre">
+            </div>
+          </div>
+          <div class="ligne">
+            <div onclick="croix" class = "carre">
+            </div>
+            <div onclick="croix" class = "carre">
+            </div>
+            <div onclick="croix" class = "carre">
+            </div>
+          </div>
+          <div class="ligne">
+            <div onclick="croix" class = "carre">
+            </div>
+            <div onclick="croix" class = "carre">
+              <p>x</p>
+            </div>
+            <div onclick="croix" class = "carre">
+            </div>
+          </div>
         </div>
+                  <p>Joueur Humain commencez !</p>
+      </div>
     </div>
+
+
+
 
 
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
   </body>
