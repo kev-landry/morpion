@@ -9,39 +9,52 @@
     <!-- Bootstrap -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+
     <link rel="stylesheet" type="text/css" href="morpion.css">
+    <script type="text/javascript" src="morpion.js"></script>
 
   </head>
   <body>
-
+    <script>
+      //alert('hello world');
+    </script>
     <h1>Morpion</h1>
 
     <div class="row">
       <div class="col-lg-12">
         <div class="center-block jeu">
           <div class="ligne">
-            <div onclick="croix" class = "carre">
+            <div class = "carre">
+              <button onclick="croix()">test</button>
             </div>
-            <div onclick="croix" class = "carre">
+            <div class = "carre">
+              <button></button>
             </div>
-            <div onclick="croix" class = "carre">
-            </div>
-          </div>
-          <div class="ligne">
-            <div onclick="croix" class = "carre">
-            </div>
-            <div onclick="croix" class = "carre">
-            </div>
-            <div onclick="croix" class = "carre">
+            <div class = "carre">
+              <button></button>
             </div>
           </div>
           <div class="ligne">
-            <div onclick="croix" class = "carre">
+            <div class = "carre">
+              <button></button>
             </div>
-            <div onclick="croix" class = "carre">
+            <div class = "carre">
+              <button></button>
+            </div>
+            <div class = "carre">
+              <button></button>
+            </div>
+          </div>
+          <div class="ligne">
+            <div class = "carre">
+              <button></button>
+            </div>
+            <div class = "carre">
+              <button></button>
               <p>x</p>
             </div>
-            <div onclick="croix" class = "carre">
+            <div class = "carre">
+              <button></button>
             </div>
           </div>
         </div>
@@ -60,24 +73,3 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
   </body>
 </html>
-
-
-<?php
-
-
-
-?>
-<script type="text/javascript">
-
-var x =0;
-var y = 0;
-
-var tab = [];
-var i = 0;
-while (tab[i]) {
-
-}
-
-
-
-</script>
