@@ -23,9 +23,9 @@
           <p class="debut"></p>
         <div class="center-block grille">
           <div class="ligne">
-            <div class = "carre">
+            <div class = "carre" id="carre0">
             </div>
-            <div class = "carre">
+            <div class = "carre" id="carre1">
             </div>
             <div class = "carre">
             </div>
@@ -47,7 +47,7 @@
             </div>
           </div>
         </div>
-
+        <p><button class="start"> START</button></p>
       </div>
     </div>
 
@@ -61,6 +61,6 @@
     <!-- Include all compiled plugins (below), or include individual files as needed -->
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
 
-    <script type="text/javascript" src="morpion.js"></script>
+    <script type="text/javascript" src="lmao.js"></script>
   </body>
 </html>

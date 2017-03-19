@@ -25,7 +25,11 @@ h1 {
     background-color: pink;
     justify-content: center;
     align-items: center;
+    border-radius: 5px;
 }
 .debut{
+  text-align: center;
+}
+p{
   text-align: center;
 }
