@@ -27,31 +27,30 @@
             </div>
             <div class = "carre" id="carre1">
             </div>
-            <div class = "carre">
+            <div class = "carre" id="carre2">
             </div>
           </div>
           <div class="ligne">
-            <div class = "carre">
+            <div class = "carre" id="carre3">
             </div>
-            <div class = "carre">
+            <div class = "carre" id="carre4">
             </div>
-            <div class = "carre">
+            <div class = "carre" id="carre5">
             </div>
           </div>
           <div class="ligne">
-            <div class = "carre">
+            <div class = "carre" id="carre6">
             </div>
-            <div class = "carre">
+            <div class = "carre" id="carre7">
             </div>
-            <div class = "carre">
+            <div class = "carre" id="carre8">
             </div>
           </div>
         </div>
+        <p>Commencez !</p>
         <p><button class="start"> START</button></p>
       </div>
     </div>
-
-
 
 
 

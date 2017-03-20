@@ -1,22 +1,36 @@
+var count = 0;
 
-var tour = 0;
-$(".carre").click(function jouer() {
+function tour() {
 
-
-    if (tour % 2 === 0) {
+    if (count % 2 === 0) {
         var result = $(".debut").html("<span>A toi de commencer !</span>")
         result = 'O';
-        tour++;
+        count++;
     } else {
         var result = $(".debut").html("<span>L'IA commence</span>");
         result = 'X';
-        tour++;
+        count++;
     }
-    console.log("altern= " + tour);
+    return result;
+}
 
-    if (result == 'O') {
-        $(this).html("O");
-    }else{
+$(".carre").click(function jouer() {
 
+
+    var grille = [
+        ["", "", ""],
+        ["", "", ""],
+        ["", "", ""]
+    ];
+    var coin1 = grille[0][0];
+    var coin2 = grille[0][2];
+    var coin3 = grille[2][0];
+    var coin4 = grille[2][2];
+    var centre = grille[1][1];
+
+    if (tour() == 'O') {
+      $(this).html('O');
+    }else {
+      $(this).html("X");
     }
 });
