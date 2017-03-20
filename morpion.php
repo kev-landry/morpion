@@ -48,7 +48,7 @@
           </div>
         </div>
         <p>Commencez !</p>
-        <p><button class="start"> START</button></p>
+        <p><button class="reset">RESET</button></p>
       </div>
     </div>
 

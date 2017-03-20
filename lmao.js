@@ -15,7 +15,7 @@ function tour() {
     console.log("tour result = " + result);
     return result;
 }
-//Tableau représentant notre grille de jeu
+//Tableau 2d représentant notre grille de jeu
 var grille = [
     ["", "", ""],
     ["", "", ""],
@@ -32,43 +32,54 @@ var centre = grille[1][1];
 $(".carre").click(function jouer() { // X = IA, O = Humain
 
     if (tour() == 'O') {
+
+        //D'abord l'humain joue
         $(this).html('O'); //On place notre O dans la case voulu
-        //ON recupere l'id où le click à été effectué ?
-        
+        var carreId = console.log($(this).attr('id')); //ON recupere l'id où le click à été effectué !
+
+        //Puis l'IA joue
+        if ($(this) == carreId) {
+            grille[][]= 'O';
+        }
 
         if (grille[0][0] == "") {
-            setTimeout(function() { //L'IA attend 1sec avant de jouer
+            setTimeout(function() { //L'IA attend 800 ms avant de jouer
                 $("#carre0").html("X");
-            }, 1000);
+            }, 800);
             grille[0][0] = "X";
             console.log("condition coin1 ");
         } else if (grille[0][2] == "") {
             setTimeout(function() {
                 $("#carre2").html("X");
-            }, 1000);
+            }, 800);
             grille[0][2] = "X";
             console.log("condition coin2 ");
         } else if (grille[2][0] == "") {
             setTimeout(function() {
                 $("#carre6").html("X");
-            }, 1000);
+            }, 800);
             grille[2][0] = "X";
         } else if (grille[2][2] == "") {
             setTimeout(function() {
                 $("#carre8").html("X");
-            }, 1000);
+            }, 800);
             grille[2][2] = "X";
         } else if (grille[1][1] == "") {
             setTimeout(function() {
                 $("#carre4").html("X");
-            }, 1000);
+            }, 800);
             grille[1][1] = "X";
         }
     }
+
     console.log(grille);
 });
 
-function vanqueur() {
+$('.reset').click(function reset() {
 
+    location.reload('.carre');
+});
 
-}
+$('tr').click(function affiche() {
+    $(this).html('X');
+});
