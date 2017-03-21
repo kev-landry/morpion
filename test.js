@@ -16,53 +16,69 @@ function tour() {
     } else {
         result = 'X'; //IA
     }
-    console.log("tour : "+ result);
+    console.log("tour : " + result);
     count++;
     return result;
 }
 
 // La grille de jeu en Tableau
-var grille = new Object();
-grille["carre0"] = "";grille["carre1"] = "";grille["carre2"] = "";
-grille["carre3"] = "";grille["carre4"] = "";grille["carre5"] = "";
-grille["carre6"] = "";grille["carre7"] = "";grille["carre8"] = "";
+var grille = {
+    carre0: "",
+    carre1: "",
+    carre2: "",
+    carre3: "",
+    carre4: "",
+    carre5: "",
+    carre6: "",
+    carre7: "",
+    carre8: ""
+};
+
+
 
 function afficher() {
 
     if (tour() == 'O') {
-        $(this).html("O");
+        click;
         var carreId = $(this).attr('id'); //ON recupere l'id où le click à été effectué !
-        for(var key in grille){
-          console.log("grille de carre0 for = " + key);
-          console.log("carre id = " + carreId);
-          if(key == carreId){
-            grille.carre0 == 'O';
-            console.log("grille de carre0 if = " + grille[key]);
-          }
+        for (var key in grille) { //parcours du tab asso
+
+            if (key == carreId) {
+                grille[key] = "O"; //grille[key] prend la valeur "O" !
+            }
         }
     } else {
         //Si IA commence elle va jouer X dans un coin
-        $(this).html("X");
+        if (grille["carre0"] = "" || grille["carre2"] || grille["carre6"] || grille["carre8"]) {
+            $("#carre2").html("X")
+            var carreId = $(this).attr('id');
+            for (var key in grille) { //parcours du tab asso
+                if (key == carreId) {
+                    grille[key] = "X"; //grille[key] prend la valeur "X" !
+                }
+            }
+        }
     }
-                console.log("grille de carre0 fin fonction = " + grille[key]);
+    console.log("grille de carre0 fin fonction = " + grille["carre0"] + grille["carre5"]);
 }
 
 // La grille de jeu en Tableau
 
-
+var click = $(".carre").click(function() {
+    $(this).html("O");
+});
 /*{"carre":"X",carre:"O",carre:"",
               carre:"X",carre:"",carre:"",
               carre:"",carre:"",carre:""};*/
 
-var clickSalope = $(".carre").click(afficher);
-clickSalope;
+
 
 function IA() {
 
-    for(var key in grille){
-      if(grille[key] == ""){
+    for (var key in grille) {
+        if (grille[key] == "") {
 
-      }
+        }
     }
 
     if (grille["carre0"] = "" || grille["carre2"] || grille["carre6"] || grille["carre8"]) {
@@ -70,16 +86,14 @@ function IA() {
     }
 }
 //Détermine la gagne
-function isGagner(){
+function isGagner() {
 
 }
-//Fonction reset le jeu
+//Fonction reset le jeu need un reset DOM
 $('.reset').click(function reset() {
 
     $(".carre").load(location.href + " .carre>*", "");
 });
-
-
 
 /*if(grille["carre0"] = "" || grille["carre2"] || grille["carre6"] || grille["carre8"]){
 }*/
